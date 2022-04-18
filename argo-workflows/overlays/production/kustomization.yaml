@@ -7,6 +7,10 @@ patches:
 - path: ingress_patch.json
   target:
     group: networking.k8s.io
-    version: v1
     kind: Ingress
     name: argo-server
+    version: v1
+images:
+- name: argoproj/argocli
+  newName: argoproj/argocli
+  newTag: v2.12.4
